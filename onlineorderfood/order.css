@@ -1,0 +1,102 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f0;
+    text-align: center;
+}
+
+header {
+    background: #ff5722;
+    color: white;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.restaurant {
+    background: #ffe0b2;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.restaurant h3 {
+    color: #e65100;
+    margin-top: 10px;
+}
+
+.categories, #menu, #reviews {
+    padding: 20px;
+}
+
+.food-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #ccc;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3, .card p, .card h4 {
+    margin: 10px;
+}
+
+.card h4 {
+    color: #e64a19;
+}
+
+button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d84315;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 8px 5px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}

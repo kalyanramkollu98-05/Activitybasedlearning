@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    color: #222;
+    text-align: center;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    color: #ff4d00;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #ff4d00;
+}
+
+.hero {
+    background: #292929;
+    color: white;
+    padding: 70px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.btn, button {
+    display: inline-block;
+    background: #ff4d00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover, button:hover {
+    background: #cc3900;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 35px 15px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #ff4d00;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #bbb;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px #999;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 500px;
+    background: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #ff4d00;
+    color: white;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
